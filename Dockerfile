@@ -5,7 +5,8 @@ LABEL maintainer="Leonardo Flores <contato@leonardocouy.com>"
 RUN apk add --no-cache --update \
   build-base \
   git \
-  python2
+  python2 \
+  && npm install -g node-gyp
 
 # Libsass & Sassc install (required for node-sass)
 RUN \
